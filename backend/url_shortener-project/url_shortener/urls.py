@@ -5,6 +5,7 @@ from shortener.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('get/', ReactView.as_view()),
+    path('getshort/', ReactView.as_view()),
+    path('getlong/', ReactView.as_view()),
     path('add/', ReactView.as_view()),
 ]
